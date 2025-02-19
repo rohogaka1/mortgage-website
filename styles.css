@@ -3408,49 +3408,72 @@ html {
 .mobile-menu {
     display: none;
     position: fixed;
-    top: 0;
+    top: 60px; /* Adjust based on your header height */
     left: 0;
     right: 0;
-    bottom: 0;
     background: white;
     padding: 20px;
     z-index: 1000;
+    max-height: calc(100vh - 60px); /* Viewport height minus header */
+    overflow-y: auto; /* Enable scrolling */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+/* Ensure the header stays on top */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 1001; /* Higher than mobile menu */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Adjust body padding to account for fixed header */
+body {
+    padding-top: 60px; /* Match header height */
+}
+
+/* Mobile menu items styling */
 .mobile-nav-item {
     display: block;
     padding: 15px;
     color: #1f2937;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     border-bottom: 1px solid #e5e7eb;
 }
 
-/* Responsive Design */
+.mobile-nav-item:last-child {
+    border-bottom: none;
+}
+
+/* Mobile menu toggle button */
+.mobile-menu-btn {
+    z-index: 1002; /* Above everything */
+}
+
 @media (max-width: 768px) {
-    .contact-info {
-        display: none;
+    .top-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1002;
     }
-    
-    .social-links {
-        width: 100%;
-        justify-content: center;
+
+    .main-nav {
+        top: 36px; /* Height of top bar */
     }
-    
-    .nav-links {
-        display: none;
+
+    body {
+        padding-top: 96px; /* Height of top bar + main nav */
     }
-    
-    .mobile-menu.active {
-        display: block;
-    }
-    
-    .main-nav .container {
-        justify-content: space-between;
-    }
-    
-    .logo {
-        font-size: 18px;
+
+    .mobile-menu {
+        top: 96px; /* Height of top bar + main nav */
+        max-height: calc(100vh - 96px);
     }
 }
 
@@ -3503,4 +3526,76 @@ body > a:not(.nav-link):not(.logo):not(.mobile-nav-item) {
     .nav-links {
         gap: 20px; /* Reduced spacing for mobile */
     }
+}
+
+/* Reset fixed positioning for desktop */
+@media (min-width: 769px) {
+    .top-bar {
+        position: relative;
+    }
+
+    .main-nav {
+        position: relative;
+        top: 0;
+    }
+
+    body {
+        padding-top: 0;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+}
+
+/* Keep mobile fixed positioning */
+@media (max-width: 768px) {
+    .top-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1002;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 36px;
+        left: 0;
+        right: 0;
+        z-index: 1001;
+    }
+
+    body {
+        padding-top: 96px;
+    }
+
+    .mobile-menu {
+        top: 96px;
+        max-height: calc(100vh - 96px);
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+/* Remove floating CTA styles */
+.floating-cta {
+    display: none;
+}
+
+/* If there were any other floating CTA related styles, they can be removed:
+.floating-cta .cta-button {
+    display: none;
+}
+*/
+
+/* Keep the main CTA button styles for the navigation */
+.cta-button {
+    background: #1e3a8a;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
 }
