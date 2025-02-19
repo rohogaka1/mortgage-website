@@ -10,35 +10,51 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="/" class="nav-logo">
-                Mortgages by Carla
-            </a>
-            
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span class="hamburger"></span>
-            </button>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <a href="tel:+13862643553">
+                    <i class="fas fa-phone"></i> (386) 264-3553
+                </a>
+                <a href="mailto:carla@mortgagesbycarla.com">
+                    <i class="fas fa-envelope"></i> carla@mortgagesbycarla.com
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/mortgagesbycarla" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/mortgagesbycarla" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/mortgagesbycarla" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@mortgagesbycarla" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@mortgagesbycarla" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://twitter.com/mortgagescarla" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
 
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <a href="/" class="logo">Mortgages by Carla</a>
             <div class="nav-links">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/about" class="nav-link">About</a>
-                <a href="/loan-options" class="nav-link">Loan Options</a>
-                <a href="/blog" class="nav-link">Blog</a>
-                <a href="/contact" class="nav-link">Contact</a>
-                <a href="/get-pre-approved" class="nav-button">Get Pre-Approved</a>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/loan-programs">Loan Options</a>
+                <a href="/blog">Blog</a>
+                <a href="/contact">Contact</a>
+                <a href="https://1835856.my1003app.com/2002217/register" class="cta-button" target="_blank">Get Pre-Approved</a>
             </div>
         </div>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
+    <!-- Mobile Menu -->
     <div class="mobile-menu">
         <a href="/" class="mobile-nav-item">Home</a>
         <a href="/about" class="mobile-nav-item">About</a>
-        <a href="/loan-options" class="mobile-nav-item">Loan Options</a>
+        <a href="/loan-programs" class="mobile-nav-item">Loan Options</a>
         <a href="/blog" class="mobile-nav-item">Blog</a>
         <a href="/contact" class="mobile-nav-item">Contact</a>
-        <a href="/get-pre-approved" class="mobile-nav-item">Get Pre-Approved</a>
+        <a href="https://1835856.my1003app.com/2002217/register" class="mobile-nav-item">Get Pre-Approved</a>
     </div>
 
     <main>
@@ -57,7 +73,7 @@
                     <p class="hero-subtitle">Guiding you through every step with personalized mortgage solutions and dedicated service.</p>
                     
                     <div class="hero-cta">
-                        <a href="#contact" class="cta-button">Get Pre Approved</a>
+                        <a href="https://1835856.my1003app.com/2002217/register" class="cta-button" target="_blank" rel="noopener noreferrer">Get Pre-Approved Today</a>
                     </div>
                 </div>
 
@@ -68,7 +84,8 @@
             </div>
         </section>
 
-        <section class="about-section">
+        <!-- About Section -->
+        <section id="about" class="about-section">
             <div class="about-tag">About Me</div>
             
             <div class="about-container">
@@ -112,6 +129,12 @@
             </div>
         </section>
 
+        <!-- After About Section -->
+        <div class="cta-banner">
+            <h3>Ready to Start Your Home Buying Journey?</h3>
+            <a href="https://1835856.my1003app.com/2002217/register" class="cta-button" target="_blank" rel="noopener noreferrer">Start Pre-Approval</a>
+        </div>
+
         <!-- Realtor Partner Program Section -->
         <section id="realtor" class="reveal">
             <div class="section-container">
@@ -147,71 +170,8 @@
             </div>
         </section>
 
-        <section id="blog" class="reveal">
-            <div class="section-container">
-                <h2>Latest Mortgage Insights</h2>
-                <p class="section-subtitle">Expert advice and market updates to guide your home buying journey</p>
-                
-                <div class="blog-grid">
-                    <!-- Featured Article -->
-                    <article class="blog-card featured">
-                        <div class="blog-image">
-                            <span class="blog-category">Market Update</span>
-                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
-                                 alt="2024 Housing Market">
-                        </div>
-                        <div class="blog-content">
-                            <h3>2024 Palm Coast Housing Market: What Buyers Need to Know</h3>
-                            <p>Get insights into current market trends, interest rates, and what it means for homebuyers in Palm Coast.</p>
-                            <div class="blog-meta">
-                                <span class="date">March 15, 2024</span>
-                                <a href="#" class="read-more">Read Article →</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Regular Articles -->
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <span class="blog-category">First-Time Buyers</span>
-                            <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
-                                 alt="First Time Buyers Guide">
-                        </div>
-                        <div class="blog-content">
-                            <h3>Complete Guide to FHA Loans for First-Time Buyers</h3>
-                            <p>Everything you need to know about FHA loans and why they're perfect for first-time homebuyers.</p>
-                            <div class="blog-meta">
-                                <span class="date">March 10, 2024</span>
-                                <a href="#" class="read-more">Read Article →</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <span class="blog-category">Tips & Advice</span>
-                            <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
-                                 alt="Credit Score Tips">
-                        </div>
-                        <div class="blog-content">
-                            <h3>5 Simple Ways to Boost Your Credit Score Before Applying</h3>
-                            <p>Practical tips to improve your credit score and increase your chances of mortgage approval.</p>
-                            <div class="blog-meta">
-                                <span class="date">March 5, 2024</span>
-                                <a href="#" class="read-more">Read Article →</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="blog-cta">
-                    <a href="#" class="secondary-btn">View All Articles</a>
-                </div>
-            </div>
-        </section>
-
         <!-- Loan Programs Section -->
-        <section id="loan-programs" class="reveal">
+        <section id="loan-programs" class="loan-programs">
             <div class="section-container">
                 <span class="section-tag">Loan Programs</span>
                 <h2>Loan Programs</h2>
@@ -333,6 +293,12 @@
             </div>
         </section>
 
+        <!-- After Loan Programs Section -->
+        <div class="cta-banner">
+            <h3>Find the Right Loan Program for You</h3>
+            <a href="https://1835856.my1003app.com/2002217/register" class="cta-button" target="_blank" rel="noopener noreferrer">Get Pre-Approved Now</a>
+        </div>
+
         <!-- Resources Section -->
         <section id="resources" class="reveal">
             <div class="section-container">
@@ -415,6 +381,12 @@
             </div>
         </section>
 
+        <!-- Before Testimonials Section -->
+        <div class="cta-banner">
+            <h3>Join Our Happy Homeowners</h3>
+            <a href="https://1835856.my1003app.com/2002217/register" class="cta-button" target="_blank" rel="noopener noreferrer">Begin Your Journey</a>
+        </div>
+
         <!-- Contact Section -->
         <section id="contact" class="reveal">
             <div class="section-container">
@@ -463,6 +435,11 @@
                 </div>
             </div>
         </section>
+
+        <!-- In Contact Section -->
+        <div class="contact-cta">
+            <a href="https://1835856.my1003app.com/2002217/register" class="cta-button-large" target="_blank" rel="noopener noreferrer">Start Your Pre-Approval</a>
+        </div>
     </main>
 
     <footer>
