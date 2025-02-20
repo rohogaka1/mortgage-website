@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Carla Gaspar - Senior Loan Officer with over 22 years of banking experience in Palm Coast, FL">
+    <title>About Carla Gaspar | Senior Loan Officer | Palm Coast, FL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a365d',
+                        secondary: '#2563eb',
+                        accent: '#f97316'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-[Poppins] bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl xs:text-2xl font-bold text-primary">Carla Gaspar</a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-4 lg:space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="text-primary font-medium">About</a>
+                    <a href="#loan-programs" class="text-gray-600 hover:text-primary transition-colors">Loan Programs</a>
+                    <a href="#resources" class="text-gray-600 hover:text-primary transition-colors">Resources</a>
+                    <a href="#blog" class="text-gray-600 hover:text-primary transition-colors">Blog</a>
+                    <a href="https://1835856.my1003app.com/2002217/register" class="bg-accent text-white px-6 py-2 rounded-full hover:bg-accent/90 transition-all transform hover:scale-105">
+                        Apply Now
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="p-2 text-gray-600 touch-manipulation" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="pt-24 pb-12 bg-primary">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">About Carla Gaspar</h1>
+                <p class="text-xl text-gray-200 max-w-2xl mx-auto">Dedicated to helping families achieve their homeownership dreams</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <!-- Image Column -->
+                <div class="space-y-8">
+                    <div class="rounded-2xl overflow-hidden shadow-lg">
+                        <img 
+                            src="images/carla-profile.jpg" 
+                            alt="Carla Gaspar - Senior Loan Officer" 
+                            class="w-full h-auto"
+                        >
+                    </div>
+                    <!-- Credentials Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-semibold text-primary mb-4">Credentials</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-accent mr-3"></i>
+                                <span>NMLS#: 2002217</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-accent mr-3"></i>
+                                <span>Licensed in Florida</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-briefcase text-accent mr-3"></i>
+                                <span>22+ Years Banking Experience</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="space-y-8">
+                    <div class="prose max-w-none">
+                        <h2 class="text-3xl font-bold text-primary mb-6">My Journey</h2>
+                        <p class="text-gray-600 mb-4">
+                            With over two decades of experience in banking and mortgage lending, I've dedicated my career to helping individuals and families achieve their homeownership dreams. My journey began in Rhode Island's largest credit unions, where I developed a deep understanding of financial services and mortgage products.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            Now serving the Palm Coast community as a Senior Loan Officer, I bring extensive knowledge in regulatory compliance and a commitment to providing personalized mortgage solutions. My approach combines professional expertise with a genuine desire to make the mortgage process as smooth and transparent as possible for my clients.
+                        </p>
+                        <p class="text-gray-600 mb-8">
+                            I believe that every homebuyer's story is unique, and I take pride in finding the right mortgage solution for each individual situation. Whether you're a first-time homebuyer, looking to refinance, or investing in property, I'm here to guide you through every step of the process.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-primary mb-4">Areas of Expertise</h3>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-accent"></i>
+                                <span>First-Time Homebuyer Programs</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-accent"></i>
+                                <span>Conventional Mortgages</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-accent"></i>
+                                <span>FHA & VA Loans</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-accent"></i>
+                                <span>Refinancing</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-accent"></i>
+                                <span>Investment Properties</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="fas fa-check-circle text-accent"></i>
+                                <span>Jumbo Loans</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-semibold text-primary mb-4">Let's Connect</h3>
+                        <div class="space-y-4">
+                            <a href="tel:4019520655" class="flex items-center text-gray-600 hover:text-primary transition-colors">
+                                <i class="fas fa-phone mr-3"></i>
+                                (401) 952-0655
+                            </a>
+                            <a href="mailto:Carla@FloMortgage.com" class="flex items-center text-gray-600 hover:text-primary transition-colors">
+                                <i class="fas fa-envelope mr-3"></i>
+                                Carla@FloMortgage.com
+                            </a>
+                            <p class="flex items-center text-gray-600">
+                                <i class="fas fa-map-marker-alt mr-3"></i>
+                                Palm Coast, FL
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to Start Your Journey?</h2>
+            <p class="text-gray-300 mb-8 max-w-2xl mx-auto">Let's work together to find the perfect mortgage solution for your needs.</p>
+            <a href="https://1835856.my1003app.com/2002217/register" class="inline-block bg-accent text-white px-8 py-3 rounded-full font-medium hover:bg-accent/90 transition-all transform hover:scale-105">
+                Get Started Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <!-- ... Copy the footer section from index.html ... -->
+
+    <!-- Mobile Menu (same as index.html) -->
+    <!-- ... Copy the mobile menu section from index.html ... -->
+
+    <script>
+        // Mobile menu functionality (same as index.html)
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    </script>
+</body>
+</html> 
