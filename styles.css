@@ -3599,3 +3599,63 @@ body > a:not(.nav-link):not(.logo):not(.mobile-nav-item) {
     border-radius: 6px;
     transition: background-color 0.3s ease;
 }
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    /* Top bar refinements */
+    .top-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1002;
+        padding: 5px 0;
+        font-size: 13px;
+    }
+
+    /* Main navigation adjustments */
+    .main-nav {
+        position: fixed;
+        top: 31px; /* Reduced from 36px */
+        left: 0;
+        right: 0;
+        z-index: 1001;
+        padding: 10px 0;
+    }
+
+    /* Reduce overall header height */
+    body {
+        padding-top: 81px; /* Reduced from 96px */
+    }
+
+    /* Mobile menu refinements */
+    .mobile-menu {
+        top: 81px; /* Match new header height */
+        max-height: calc(100vh - 81px);
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+    }
+
+    /* Container spacing */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Logo size adjustment */
+    .logo {
+        font-size: 18px;
+    }
+
+    /* Social links spacing */
+    .social-links a {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    /* Smooth scroll behavior */
+    html {
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+}
