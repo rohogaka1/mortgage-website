@@ -3450,25 +3450,53 @@ body {
 }
 
 @media (max-width: 768px) {
+    /* Top bar stays at top */
     .top-bar {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         z-index: 1002;
+        padding: 5px 0;
+        height: 30px; /* Set explicit height */
     }
 
+    /* Push main nav down further */
     .main-nav {
-        top: 36px; /* Height of top bar */
+        position: fixed;
+        top: 40px; /* Increased from 25px to create more space */
+        left: 0;
+        right: 0;
+        z-index: 1001;
+        padding: 10px 0;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
+    /* Adjust body padding for new spacing */
     body {
-        padding-top: 96px; /* Height of top bar + main nav */
+        padding-top: 85px; /* Increased to account for larger gap */
+    }
+
+    /* Update mobile menu position */
+    .mobile-menu {
+        top: 85px; /* Match new total header height */
+        max-height: calc(100vh - 85px);
+    }
+
+    /* Ensure logo has enough space */
+    .logo {
+        padding: 5px 0;
+        margin-top: 5px;
     }
 
     .mobile-menu {
         top: 96px; /* Height of top bar + main nav */
         max-height: calc(100vh - 96px);
+    }
+
+    .nav-links {
+        display: none;
     }
 }
 
