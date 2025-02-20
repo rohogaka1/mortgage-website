@@ -1,0 +1,51 @@
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-white rounded-2xl shadow-sm p-8 max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl font-bold text-primary mb-4">Stay Updated</h2>
+                <p class="text-gray-600 mb-6">Subscribe to receive the latest mortgage tips and local market updates.</p>
+                
+                <!-- Success Message (hidden by default) -->
+                <div id="successMessage" class="hidden">
+                    <div class="bg-green-50 text-green-800 rounded-lg p-4 mb-6">
+                        <div class="flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <p class="font-medium">Thanks for subscribing! Check your email to confirm your subscription.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form 
+                    id="ctaForm" 
+                    class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
+                    action="https://app.convertkit.com/forms/4c54b4c84b/subscriptions"
+                    method="post"
+                    data-sv-form="4c54b4c84b"
+                    data-uid="4c54b4c84b"
+                >
+                    <!-- ... existing form fields ... -->
+                </form>
+                <p class="text-sm mt-4 text-gray-500">By subscribing, you agree to receive email updates. You can unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add to the bottom of each file, just before </body> -->
+    <script>
+        // ... existing mobile menu code ...
+
+        // Form submission handler
+        document.getElementById('ctaForm').addEventListener('submit', function(e) {
+            // Let the form submit normally to ConvertKit
+            const form = this;
+            const successMessage = document.getElementById('successMessage');
+            
+            // Show success message after submission
+            setTimeout(function() {
+                form.style.display = 'none';
+                successMessage.classList.remove('hidden');
+            }, 500);
+        });
+    </script> 

@@ -23,12 +23,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="font-[Poppins] bg-gray-50">
-    <!-- Navigation (same as index.html) -->
+    <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <a href="index.html" class="text-xl xs:text-2xl font-bold text-primary">Carla Gaspar</a>
+                    <a href="index.html" class="text-xl xs:text-2xl font-bold text-primary">Mortgages By Carla</a>
                 </div>
                 
                 <!-- Desktop Menu -->
@@ -168,9 +168,36 @@
     <section class="py-16 bg-gray-100">
         <div class="max-w-7xl mx-auto px-4">
             <div class="bg-white rounded-2xl shadow-sm p-8 max-w-3xl mx-auto text-center">
-                <h2 class="text-2xl font-bold text-primary mb-4">Stay Connected</h2>
-                <p class="text-gray-600 mb-6">Get expert mortgage advice and market updates delivered to your inbox.</p>
-                <script async data-uid="4c54b4c84b" src="https://mortgages-by-carla.kit.com/4c54b4c84b/index.js"></script>
+                <h2 class="text-2xl font-bold text-primary mb-4">Stay Updated</h2>
+                <p class="text-gray-600 mb-6">Subscribe to receive the latest mortgage tips and local market updates.</p>
+                
+                <form 
+                    id="ctaForm" 
+                    class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
+                    action="https://app.convertkit.com/forms/4c54b4c84b/subscriptions"
+                    method="post"
+                    data-sv-form="4c54b4c84b"
+                    data-uid="4c54b4c84b"
+                >
+                    <input 
+                        type="email" 
+                        name="email_address"
+                        placeholder="Enter your email" 
+                        class="flex-1 px-4 py-3 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-accent"
+                        required 
+                    >
+                    <!-- ConvertKit Anti-spam field -->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="fields[website]" tabindex="-1">
+                    </div>
+                    <button 
+                        type="submit" 
+                        class="bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
+                    >
+                        Get Tips
+                    </button>
+                </form>
+                <p class="text-sm mt-4 text-gray-500">By subscribing, you agree to receive email updates. You can unsubscribe at any time.</p>
             </div>
         </div>
     </section>
@@ -188,17 +215,30 @@
 
     <!-- Footer (same as index.html) -->
     <footer class="bg-gray-900 text-gray-300 py-12">
-        <div>
-            <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
-            <ul class="space-y-2">
-                <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
-                <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
-                <li><a href="loan-programs.html" class="hover:text-white transition-colors">Loan Programs</a></li>
-                <li><a href="resources.html" class="hover:text-white transition-colors">Resources</a></li>
-                <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
-            </ul>
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-white text-lg font-semibold mb-4">Contact</h3>
+                <p class="mb-2"><i class="fas fa-phone mr-2"></i>(401) 952-0655</p>
+                <p class="mb-2"><i class="fas fa-envelope mr-2"></i>Carla@FloMortgage.com</p>
+                <p><i class="fas fa-map-marker-alt mr-2"></i>Palm Coast, FL</p>
+                <img 
+                    src="/images/equal-housing-opportunity.png" 
+                    alt="Equal Housing Opportunity"
+                    class="h-12 mt-4"
+                >
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="loan-programs.html" class="hover:text-white transition-colors">Loan Programs</a></li>
+                    <li><a href="resources.html" class="hover:text-white transition-colors">Resources</a></li>
+                    <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
+                </ul>
+            </div>
+            <!-- ... rest of footer ... -->
         </div>
-        <!-- ... rest of footer ... -->
     </footer>
 
     <!-- Mobile Menu -->

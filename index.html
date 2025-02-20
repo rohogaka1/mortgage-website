@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Carla Gaspar - Senior Loan Officer in Palm Coast, FL. Over 22 years of banking experience helping clients achieve their dream home.">
-    <title>Carla Gaspar | Senior Loan Officer | Palm Coast, FL</title>
+    <meta name="description" content="Expert mortgage guidance in Palm Coast, FL. Get pre-approved and find the right loan program for your needs.">
+    <title>Mortgages By Carla - Palm Coast Mortgage Expert</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -35,7 +35,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <a href="index.html" class="text-xl xs:text-2xl font-bold text-primary">Carla Gaspar</a>
+                    <a href="index.html" class="text-xl xs:text-2xl font-bold text-primary">Mortgages By Carla</a>
                 </div>
                 
                 <!-- Desktop Menu -->
@@ -200,27 +200,45 @@
                 <h2 class="text-2xl font-bold text-primary mb-4">Stay Updated</h2>
                 <p class="text-gray-600 mb-6">Subscribe to receive the latest mortgage tips and local market updates.</p>
                 
-                <!-- Primary Kit Form -->
-                <div id="convertkit-form">
-                    <script async data-uid="4c54b4c84b" src="https://mortgages-by-carla.kit.com/4c54b4c84b/index.js"></script>
+                <!-- Success Message (hidden by default) -->
+                <div id="successMessage" class="hidden">
+                    <div class="bg-green-50 text-green-800 rounded-lg p-4 mb-6">
+                        <div class="flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <p class="font-medium">Thanks for subscribing! Check your email to confirm your subscription.</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Fallback Form -->
-                <form id="fallback-form" action="https://app.convertkit.com/forms/4c54b4c84b/subscriptions" method="post" class="hidden flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <form 
+                    id="ctaForm" 
+                    class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
+                    action="https://app.convertkit.com/forms/4c54b4c84b/subscriptions"
+                    method="post"
+                    data-sv-form="4c54b4c84b"
+                    data-uid="4c54b4c84b"
+                >
                     <input 
                         type="email" 
-                        name="email_address" 
+                        name="email_address"
                         placeholder="Enter your email" 
+                        class="flex-1 px-4 py-3 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-accent"
                         required 
-                        class="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:border-primary"
                     >
+                    <!-- ConvertKit Anti-spam field -->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="fields[website]" tabindex="-1">
+                    </div>
                     <button 
                         type="submit" 
-                        class="bg-accent text-white px-6 py-2 rounded-full hover:bg-accent/90 transition-all transform hover:scale-105"
+                        class="bg-accent hover:bg-accent/90 text-white px-6 py-3 rounded-lg font-semibold transition-all transform hover:scale-105"
                     >
-                        Subscribe
+                        Get Tips
                     </button>
                 </form>
+                <p class="text-sm mt-4 text-gray-500">By subscribing, you agree to receive email updates. You can unsubscribe at any time.</p>
             </div>
         </div>
     </section>
@@ -228,37 +246,66 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Contact Column -->
             <div>
                 <h3 class="text-white text-lg font-semibold mb-4">Contact</h3>
-                <p class="mb-2"><i class="fas fa-phone mr-2"></i>(401) 952-0655</p>
-                <p class="mb-2"><i class="fas fa-envelope mr-2"></i>Carla@FloMortgage.com</p>
-                <p><i class="fas fa-map-marker-alt mr-2"></i>Palm Coast, FL</p>
+                <a href="tel:4019520655" class="block mb-2 hover:text-white transition-colors">
+                    <i class="fas fa-phone mr-2"></i>(401) 952-0655
+                </a>
+                <a href="mailto:Carla@FloMortgage.com" class="block mb-2 hover:text-white transition-colors">
+                    <i class="fas fa-envelope mr-2"></i>Carla@FloMortgage.com
+                </a>
+                <p class="mb-2">
+                    <i class="fas fa-map-marker-alt mr-2"></i>Palm Coast, FL
+                </p>
+                <img 
+                    src="images/equal-housing-logo-blue.png"
+                    alt="Equal Housing Opportunity"
+                    class="h-10 mt-4 opacity-90"
+                >
             </div>
+
+            <!-- Quick Links Column -->
             <div>
                 <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
                 <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
                     <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
                     <li><a href="loan-programs.html" class="hover:text-white transition-colors">Loan Programs</a></li>
                     <li><a href="resources.html" class="hover:text-white transition-colors">Resources</a></li>
                     <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
                 </ul>
             </div>
+
+            <!-- Connect Column -->
             <div>
                 <h3 class="text-white text-lg font-semibold mb-4">Connect</h3>
-                <div class="flex space-x-4">
-                    <a href="https://facebook.com/" class="hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://instagram.com/" class="hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
-                    <a href="https://linkedin.com/" class="hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://twitter.com/" class="hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
                 </div>
             </div>
+
+            <!-- Licensing Column -->
             <div>
                 <h3 class="text-white text-lg font-semibold mb-4">Licensing</h3>
-                <p class="text-sm">NMLS#: 2002217</p>
-                <p class="text-sm">Licensed in: FL</p>
-                <img src="equal-housing-opportunity.png" alt="Equal Housing Opportunity" class="h-12 mt-4">
+                <p class="mb-2">NMLS#: 2002217</p>
+                <p class="mb-2">Licensed in: FL</p>
+                <p>Equal Housing Opportunity</p>
             </div>
         </div>
+
+        <!-- Copyright -->
         <div class="max-w-7xl mx-auto px-4 mt-8 pt-8 border-t border-gray-800 text-center text-sm">
             <p>©2024 All Rights Reserved | Equal Housing Opportunity</p>
         </div>
@@ -324,15 +371,18 @@
             }
         });
 
-        // Check if Kit form loads
-        setTimeout(() => {
-            const convertkitForm = document.querySelector('.formkit-form');
-            const fallbackForm = document.getElementById('fallback-form');
+        // Form submission handler
+        document.getElementById('ctaForm').addEventListener('submit', function(e) {
+            // Let the form submit normally to ConvertKit
+            const form = this;
+            const successMessage = document.getElementById('successMessage');
             
-            if (!convertkitForm) {
-                fallbackForm.classList.remove('hidden');
-            }
-        }, 2000); // Wait 2 seconds for Kit form to load
+            // Show success message after submission
+            setTimeout(function() {
+                form.style.display = 'none';
+                successMessage.classList.remove('hidden');
+            }, 500);
+        });
     </script>
 </body>
 </html>
