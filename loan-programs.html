@@ -263,21 +263,64 @@
     <!-- Footer (same as index.html) -->
     <!-- ... Copy the footer section from index.html ... -->
 
-    <!-- Mobile Menu (same as index.html) -->
-    <!-- ... Copy the mobile menu section from index.html ... -->
+    <!-- Mobile Menu -->
+    <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 z-50 transition-all duration-300" id="mobile-menu">
+        <div class="bg-white h-auto w-full xs:w-80 p-6 ml-auto">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-xl font-bold text-primary">Menu</h2>
+                <button class="p-2 text-gray-600 touch-manipulation" id="close-menu-button">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            <nav class="space-y-4">
+                <a href="index.html" class="block py-2 text-gray-600 hover:text-primary transition-colors">Home</a>
+                <a href="about.html" class="block py-2 text-gray-600 hover:text-primary transition-colors">About</a>
+                <a href="loan-programs.html" class="block py-2 text-gray-600 hover:text-primary transition-colors">Loan Programs</a>
+                <a href="resources.html" class="block py-2 text-gray-600 hover:text-primary transition-colors">Resources</a>
+                <a href="blog.html" class="block py-2 text-gray-600 hover:text-primary transition-colors">Blog</a>
+                <a href="https://1835856.my1003app.com/2002217/register" class="block bg-accent text-white px-6 py-3 rounded-full text-center mt-6">Apply Now</a>
+            </nav>
+        </div>
+    </div>
 
     <script>
-        // Mobile menu functionality
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const closeMenuButton = document.getElementById('close-menu');
-        const mobileMenu = document.getElementById('mobile-menu');
+        // Improved mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const closeMenuButton = document.getElementById('close-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
 
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.remove('hidden');
-        });
+            if (mobileMenuButton && closeMenuButton && mobileMenu) {
+                // Open menu
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                });
 
-        closeMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
+                // Close menu
+                closeMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = '';
+                });
+
+                // Close menu when clicking outside
+                mobileMenu.addEventListener('click', (e) => {
+                    if (e.target === mobileMenu) {
+                        mobileMenu.classList.add('hidden');
+                        document.body.style.overflow = '';
+                    }
+                });
+
+                // Close menu on escape key
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        document.body.style.overflow = '';
+                    }
+                });
+            }
         });
     </script>
 </body>
