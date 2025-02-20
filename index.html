@@ -199,7 +199,28 @@
             <div class="bg-white rounded-2xl shadow-sm p-8 max-w-3xl mx-auto text-center">
                 <h2 class="text-2xl font-bold text-primary mb-4">Stay Updated</h2>
                 <p class="text-gray-600 mb-6">Subscribe to receive the latest mortgage tips and local market updates.</p>
-                <script async data-uid="4c54b4c84b" src="https://mortgages-by-carla.kit.com/4c54b4c84b/index.js"></script>
+                
+                <!-- Primary Kit Form -->
+                <div id="convertkit-form">
+                    <script async data-uid="4c54b4c84b" src="https://mortgages-by-carla.kit.com/4c54b4c84b/index.js"></script>
+                </div>
+
+                <!-- Fallback Form -->
+                <form id="fallback-form" action="https://app.convertkit.com/forms/4c54b4c84b/subscriptions" method="post" class="hidden flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input 
+                        type="email" 
+                        name="email_address" 
+                        placeholder="Enter your email" 
+                        required 
+                        class="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:border-primary"
+                    >
+                    <button 
+                        type="submit" 
+                        class="bg-accent text-white px-6 py-2 rounded-full hover:bg-accent/90 transition-all transform hover:scale-105"
+                    >
+                        Subscribe
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -278,6 +299,16 @@
         closeMenuButton.addEventListener('click', () => {
             mobileMenu.classList.add('hidden');
         });
+
+        // Check if Kit form loads
+        setTimeout(() => {
+            const convertkitForm = document.querySelector('.formkit-form');
+            const fallbackForm = document.getElementById('fallback-form');
+            
+            if (!convertkitForm) {
+                fallbackForm.classList.remove('hidden');
+            }
+        }, 2000); // Wait 2 seconds for Kit form to load
     </script>
 </body>
 </html>
