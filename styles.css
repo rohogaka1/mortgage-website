@@ -3238,11 +3238,6 @@ section {
         transform: rotate(-45deg);
         bottom: 0;
     }
-
-    .nav-button {
-        width: 100%;
-        text-align: center;
-    }
 }
 
 /* Add these styles for smooth scrolling */
@@ -3609,53 +3604,60 @@ body > a:not(.nav-link):not(.logo):not(.mobile-nav-item) {
         left: 0;
         right: 0;
         z-index: 1002;
-        padding: 5px 0;
-        font-size: 13px;
+        padding: 3px 0;
+        min-height: 25px;
+        font-size: 12px;
     }
 
     /* Main navigation adjustments */
     .main-nav {
         position: fixed;
-        top: 31px; /* Reduced from 36px */
+        top: 25px; /* Reduced from 31px */
         left: 0;
         right: 0;
         z-index: 1001;
-        padding: 10px 0;
+        padding: 12px 0;
+        background: white;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
-    /* Reduce overall header height */
-    body {
-        padding-top: 81px; /* Reduced from 96px */
-    }
-
-    /* Mobile menu refinements */
-    .mobile-menu {
-        top: 81px; /* Match new header height */
-        max-height: calc(100vh - 81px);
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(10px);
-        transition: all 0.3s ease;
-    }
-
-    /* Container spacing */
-    .container {
-        padding: 0 15px;
-    }
-
-    /* Logo size adjustment */
+    /* Logo positioning */
     .logo {
         font-size: 18px;
+        margin: 0;
+        padding: 8px 0;
+        display: block;
+        position: relative;
+        z-index: 1003;
     }
 
-    /* Social links spacing */
+    /* Container adjustments */
+    .main-nav .container {
+        height: auto;
+        min-height: 45px;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Body padding adjustment */
+    body {
+        padding-top: 70px; /* Reduced from 81px */
+    }
+
+    /* Mobile menu positioning */
+    .mobile-menu {
+        top: 70px; /* Match new total header height */
+        max-height: calc(100vh - 70px);
+    }
+
+    /* Social links adjustments */
+    .social-links {
+        padding: 2px 0;
+    }
+
     .social-links a {
-        margin-left: 10px;
-        font-size: 13px;
-    }
-
-    /* Smooth scroll behavior */
-    html {
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
+        margin-left: 8px;
+        font-size: 12px;
     }
 }
