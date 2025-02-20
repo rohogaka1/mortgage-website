@@ -3,596 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Carla Gaspar - Sr. Loan Officer at FLO Mortgage | NMLS#: 2002217 | Over 22 years of banking experience | Best Mortgage Rates in Palm Coast">
-    <title>Carla Gaspar | Palm Coast Mortgage Expert | FLO Mortgage</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <meta name="description" content="Carla Gaspar - Senior Loan Officer in Palm Coast, FL. Over 22 years of banking experience helping clients achieve their dream home.">
+    <title>Carla Gaspar | Senior Loan Officer | Palm Coast, FL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a365d',
+                        secondary: '#2563eb',
+                        accent: '#f97316'
+                    },
+                    screens: {
+                        'xs': '375px',  // Added for smaller phones
+                        'sm': '640px',
+                        'md': '768px',
+                        'lg': '1024px',
+                        'xl': '1280px',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="contact-info">
-                <a href="tel:+13862643553">
-                    <i class="fas fa-phone"></i> (386) 264-3553
-                </a>
-                <a href="mailto:carla@flomortgage.com">
-                    <i class="fas fa-envelope"></i> carla@flomortgage.com
-                </a>
-            </div>
-            <div class="social-links">
-                <a href="https://www.facebook.com/mortgagesbycarla" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/mortgagesbycarla" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/mortgagesbycarla" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/@mortgagesbycarla" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.tiktok.com/@mortgagesbycarla" target="_blank"><i class="fab fa-tiktok"></i></a>
-                <a href="https://twitter.com/mortgagescarla" target="_blank"><i class="fab fa-x-twitter"></i></a>
-            </div>
-        </div>
-    </div>
+<body class="font-[Poppins] bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl xs:text-2xl font-bold text-primary">Carla Gaspar</h1>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-4 lg:space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-primary transition-colors">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary transition-colors">About</a>
+                    <a href="#loan-programs" class="text-gray-600 hover:text-primary transition-colors">Loan Programs</a>
+                    <a href="#resources" class="text-gray-600 hover:text-primary transition-colors">Resources</a>
+                    <a href="#blog" class="text-gray-600 hover:text-primary transition-colors">Blog</a>
+                    <a href="#apply" class="bg-accent text-white px-6 py-2 rounded-full hover:bg-accent/90 transition-all transform hover:scale-105">
+                        Apply Now
+                    </a>
+                </div>
 
-    <!-- Main Navigation -->
-    <nav class="main-nav">
-        <div class="container">
-            <a href="/" class="logo">Mortgages by Carla</a>
-            <div class="nav-links">
-                <a href="/" class="nav-link">Home</a>
-                <a href="/about" class="nav-link">About</a>
-                <a href="/loan-programs" class="nav-link">Loan Options</a>
-                <a href="/blog" class="nav-link">Blog</a>
-                <a href="/contact" class="nav-link">Contact</a>
-                <a href="/get-approved" class="cta-button primary">Get Pre-Approved</a>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="p-2 text-gray-600 touch-manipulation" id="mobile-menu-button">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Floating Social Links -->
-    <div class="social-links">
-        <a href="https://www.facebook.com/mortgagesbycarla" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/mortgagesbycarla" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/mortgagesbycarla" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.youtube.com/@mortgagesbycarla" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@mortgagesbycarla" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="https://twitter.com/mortgagescarla" target="_blank"><i class="fab fa-x-twitter"></i></a>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <a href="/" class="mobile-nav-item">Home</a>
-        <a href="/about" class="mobile-nav-item">About</a>
-        <a href="/loan-programs" class="mobile-nav-item">Loan Options</a>
-        <a href="/blog" class="mobile-nav-item">Blog</a>
-        <a href="/contact" class="mobile-nav-item">Contact</a>
-        <a href="/get-approved" class="mobile-nav-item">Get Pre-Approved</a>
-    </div>
-
-    <main>
-        <header>
-            <h1>Carla Gaspar - Sr. Loan Officer</h1>
-            <p>NMLS#: 2002217 | FLO Mortgage</p>
-        </header>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-container">
-                <!-- Left Side -->
-                <div class="hero-content">
-                    <span class="hero-eyebrow">Palm Coast Mortgage Expert</span>
-                    <h1>Simplifying Your Path to Homeownership</h1>
-                    <p class="hero-subtitle">Guiding you through every step with personalized mortgage solutions and dedicated service.</p>
-                    
-                    <div class="hero-cta">
-                        <a href="https://1835856.my1003app.com/2002217/register" class="cta-button" target="_blank" rel="noopener noreferrer">Get Pre-Approved Today</a>
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-16 bg-gradient-to-r from-primary to-primary/90">
+        <div class="max-w-7xl mx-auto px-4 h-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center py-12 lg:py-20">
+                <!-- Left Content -->
+                <div class="text-white text-center lg:text-left order-2 lg:order-1">
+                    <h1 class="text-3xl xs:text-4xl sm:text-5xl font-bold leading-tight mb-4 sm:mb-6">Your Path to Home Ownership Starts Here</h1>
+                    <p class="text-lg xs:text-xl mb-6 sm:mb-8 text-gray-200">Expert mortgage guidance with over 22 years of experience in Palm Coast, FL</p>
+                    <div class="flex flex-col xs:flex-row justify-center lg:justify-start gap-4">
+                        <a href="#apply" class="w-full xs:w-auto bg-accent text-white px-6 py-3 rounded-full font-medium hover:bg-accent/90 transition-all transform hover:scale-105 text-center">
+                            Get Pre-Approved
+                        </a>
+                        <a href="#contact" class="w-full xs:w-auto border-2 border-white text-white px-6 py-3 rounded-full font-medium hover:bg-white hover:text-primary transition-all text-center">
+                            Contact Me
+                        </a>
                     </div>
                 </div>
 
-                <!-- Right Side - Just the image -->
-                <div class="hero-profile">
-                    <img src="/carla-gaspar-portrait.jpg" alt="Carla Gaspar" class="profile-photo">
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <div class="about-tag">About Me</div>
-            
-            <div class="about-container">
-                <div class="about-header">
-                    <h2>Your Trusted Mortgage Expert in Palm Coast</h2>
-                    <p class="about-intro">With over 22 years of experience, I've helped hundreds of families achieve their dream of homeownership.</p>
-                </div>
-
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Families Helped</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">22+</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">4.9</span>
-                        <span class="stat-label">Client Rating</span>
-                    </div>
-                </div>
-
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <span class="feature-icon">🏆</span>
-                        <h3>Expert Guidance</h3>
-                        <p>Personalized solutions for your unique situation</p>
-                    </div>
-                    <div class="feature-card">
-                        <span class="feature-icon">⚡</span>
-                        <h3>Fast Processing</h3>
-                        <p>Streamlined approval process</p>
-                    </div>
-                    <div class="feature-card">
-                        <span class="feature-icon">💎</span>
-                        <h3>Best Rates</h3>
-                        <p>Competitive rates and flexible terms</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- After About Section -->
-        <div class="cta-banner">
-            <h3>Ready to Start Your Home Buying Journey?</h3>
-            <a href="https://1835856.my1003app.com/2002217/register" class="cta-button" target="_blank" rel="noopener noreferrer">Start Pre-Approval</a>
-        </div>
-
-        <!-- Realtor Partner Program Section -->
-        <section id="realtor" class="reveal">
-            <div class="section-container">
-                <span class="section-tag">For Realtors</span>
-                <h2>Realtor Partner Program</h2>
-                <p class="section-subtitle">Partner with us for seamless transactions and happy clients</p>
-                
-                <div class="realtor-grid">
-                    <div class="realtor-card">
-                        <div class="realtor-content">
-                            <div class="realtor-icon">⚡</div>
-                            <h3>Fast Pre-Approvals</h3>
-                            <p>Quick turnaround times to help your clients make competitive offers</p>
+                <!-- Right Content - Portrait and Details -->
+                <div class="relative order-1 lg:order-2">
+                    <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-xl max-w-md mx-auto">
+                        <div class="aspect-[3/4] mb-4 sm:mb-6 overflow-hidden rounded-xl">
+                            <img 
+                                src="images/carla-profile.jpg" 
+                                alt="Carla Gaspar - Senior Loan Officer" 
+                                class="w-full h-full object-cover"
+                                loading="eager"
+                            >
                         </div>
-                    </div>
-
-                    <div class="realtor-card">
-                        <div class="realtor-content">
-                            <div class="realtor-icon">📱</div>
-                            <h3>Direct Communication</h3>
-                            <p>Direct access to our team for updates and questions</p>
-                        </div>
-                    </div>
-
-                    <div class="realtor-card">
-                        <div class="realtor-content">
-                            <div class="realtor-icon">🎯</div>
-                            <h3>On-Time Closings</h3>
-                            <p>Consistent, reliable closing timelines you can count on</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Loan Programs Section -->
-        <section id="loan-programs" class="loan-programs">
-            <div class="section-container">
-                <span class="section-tag">Loan Programs</span>
-                <h2>Loan Programs</h2>
-                <p class="section-subtitle">Find the perfect loan program for your unique situation</p>
-
-                <div class="solutions-grid">
-                    <div class="solution-card">
-                        <div class="solution-content">
-                            <div class="solution-icon">🏠</div>
-                            <h3>Conventional Loans</h3>
-                            <p>Traditional financing with competitive rates and flexible terms. Perfect for qualified buyers with good credit.</p>
-                            <ul class="solution-features">
-                                <li>Down payments as low as 3%</li>
-                                <li>Fixed & adjustable rates</li>
-                                <li>Primary & second homes</li>
-                            </ul>
-                            <a href="/contact" class="cta-button secondary">Learn More</a>
-                        </div>
-                    </div>
-
-                    <div class="solution-card">
-                        <div class="solution-content">
-                            <div class="solution-icon">🎯</div>
-                            <h3>FHA Loans</h3>
-                            <p>Government-backed loans with more flexible requirements. Ideal for first-time homebuyers.</p>
-                            <ul class="solution-features">
-                                <li>3.5% minimum down payment</li>
-                                <li>Lower credit requirements</li>
-                                <li>Competitive rates</li>
-                            </ul>
-                            <a href="/contact" class="cta-button secondary">Learn More</a>
-                        </div>
-                    </div>
-
-                    <div class="solution-card">
-                        <div class="solution-content">
-                            <div class="solution-icon">🎖️</div>
-                            <h3>VA Loans</h3>
-                            <p>Exclusive loans for veterans and active duty military with exceptional benefits.</p>
-                            <ul class="solution-features">
-                                <li>No down payment required</li>
-                                <li>No monthly PMI</li>
-                                <li>Competitive interest rates</li>
-                            </ul>
-                            <a href="/contact" class="cta-button secondary">Learn More</a>
-                        </div>
-                    </div>
-
-                    <div class="solution-card">
-                        <div class="solution-content">
-                            <div class="solution-icon">💎</div>
-                            <h3>Jumbo Loans</h3>
-                            <p>Specialized financing for luxury homes and high-value properties above conventional limits.</p>
-                            <ul class="solution-features">
-                                <li>Higher loan amounts</li>
-                                <li>Flexible terms available</li>
-                                <li>Various down payment options</li>
-                            </ul>
-                            <a href="/contact" class="cta-button secondary">Learn More</a>
-                        </div>
-                    </div>
-
-                    <div class="solution-card">
-                        <div class="solution-content">
-                            <div class="solution-icon">🌳</div>
-                            <h3>USDA Loans</h3>
-                            <p>Zero down payment loans for homes in USDA-eligible rural and suburban areas.</p>
-                            <ul class="solution-features">
-                                <li>100% financing available</li>
-                                <li>No down payment needed</li>
-                                <li>Competitive rates</li>
-                            </ul>
-                            <a href="/contact" class="cta-button secondary">Learn More</a>
-                        </div>
-                    </div>
-
-                    <div class="solution-card">
-                        <div class="solution-content">
-                            <div class="solution-icon">🏢</div>
-                            <h3>Investment Property</h3>
-                            <p>Specialized financing for rental properties and real estate investments.</p>
-                            <ul class="solution-features">
-                                <li>Multi-unit properties</li>
-                                <li>Rental income consideration</li>
-                                <li>Portfolio loans available</li>
-                            </ul>
-                            <a href="/contact" class="cta-button secondary">Learn More</a>
-                        </div>
-                    </div>
-
-                    <div class="solution-card">
-                        <div class="solution-content">
-                            <div class="solution-icon">🔄</div>
-                            <h3>Refinance Options</h3>
-                            <p>Lower your rate, change terms, or access equity with our refinancing programs.</p>
-                            <ul class="solution-features">
-                                <li>Rate & term refinance</li>
-                                <li>Cash-out options</li>
-                                <li>Streamline programs</li>
-                            </ul>
-                            <a href="/contact" class="cta-button secondary">Learn More</a>
-                        </div>
-                    </div>
-
-                    <div class="solution-card">
-                        <div class="solution-content">
-                            <div class="solution-icon">🏗️</div>
-                            <h3>Construction Loans</h3>
-                            <p>Finance your dream home from the ground up with our construction loan programs.</p>
-                            <ul class="solution-features">
-                                <li>One-time close options</li>
-                                <li>Lot & construction financing</li>
-                                <li>Renovation loans</li>
-                            </ul>
-                            <a href="/contact" class="cta-button secondary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- After Loan Programs Section -->
-        <div class="cta-banner">
-            <h3>Find the Right Loan Program for You</h3>
-            <a href="https://1835856.my1003app.com/2002217/register" class="cta-button" target="_blank" rel="noopener noreferrer">Get Pre-Approved Now</a>
-        </div>
-
-        <!-- Resources Section -->
-        <section class="resources-section">
-            <div class="container">
-                <h2 class="section-title">Free Mortgage Resources</h2>
-                <div class="resources-grid">
-                    <div class="resource-card">
-                        <div class="resource-content">
-                            <h3>First Time Home Buyer Guide</h3>
-                            <p>Everything you need to know about buying your first home, simplified.</p>
-                            <a href="#" class="cta-button">Download Guide →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="resource-card">
-                        <div class="resource-content">
-                            <h3>Mortgage Calculator</h3>
-                            <p>Calculate your monthly payments and explore different loan scenarios.</p>
-                            <a href="#" class="cta-button">Try Calculator →</a>
-                        </div>
-                    </div>
-                    
-                    <div class="resource-card">
-                        <div class="resource-content">
-                            <h3>Refinancing Guide</h3>
-                            <p>Learn how refinancing works and if it's the right choice for you.</p>
-                            <a href="#" class="cta-button">Learn More →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="reveal">
-            <div class="section-container">
-                <span class="section-tag">Testimonials</span>
-                <h2>What My Clients Say</h2>
-                <p class="section-subtitle">Join hundreds of satisfied homeowners in Palm Coast</p>
-                
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                            <p>"Working with Carla was the best decision we made. Her knowledge of the Palm Coast market is unmatched."</p>
-                            <div class="testimonial-author">- Sarah & John M.</div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                            <p>"As a first-time homebuyer, I had many questions. Carla was patient and explained everything clearly."</p>
-                            <div class="testimonial-author">- Michael R.</div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                            <p>"Carla's expertise made our refinancing process smooth and stress-free. Highly recommended!"</p>
-                            <div class="testimonial-author">- Lisa K.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Before Testimonials Section -->
-        <div class="cta-banner">
-            <h3>Join Our Happy Homeowners</h3>
-            <a href="https://1835856.my1003app.com/2002217/register" class="cta-button" target="_blank" rel="noopener noreferrer">Begin Your Journey</a>
-        </div>
-
-        <!-- Contact Section -->
-        <section id="contact" class="reveal">
-            <div class="section-container">
-                <h2>Get in Touch</h2>
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <div class="contact-card">
-                            <div class="contact-header">
-                                <h3>Carla Gaspar</h3>
-                                <p>Senior Loan Officer | NMLS#: 2002217</p>
+                        <div class="space-y-3 sm:space-y-4">
+                            <div class="text-center">
+                                <h2 class="text-xl sm:text-2xl font-bold text-primary">Carla Gaspar</h2>
+                                <p class="text-gray-600">Senior Loan Officer</p>
                             </div>
-                            <div class="contact-details">
-                                <div class="contact-item">
-                                    <span class="icon">📍</span>
-                                    <div class="text">
-                                        <strong>Office Location</strong>
-                                        <p>1 Florida Park Dr N, Suite 105-B<br>Palm Coast, FL 32137</p>
+                            <div class="flex flex-col xs:flex-row items-center justify-center space-y-2 xs:space-y-0 xs:space-x-4">
+                                <a href="tel:4019520655" class="flex items-center text-gray-600 hover:text-primary transition-colors">
+                                    <i class="fas fa-phone mr-2"></i>
+                                    <span class="text-sm sm:text-base">(401) 952-0655</span>
+                                </a>
+                                <span class="hidden xs:block text-gray-300">|</span>
+                                <a href="mailto:Carla@FloMortgage.com" class="flex items-center text-gray-600 hover:text-primary transition-colors">
+                                    <i class="fas fa-envelope mr-2"></i>
+                                    <span class="text-sm sm:text-base">Email</span>
+                                </a>
+                            </div>
+                            <div class="border-t border-gray-200 pt-3 sm:pt-4">
+                                <div class="grid grid-cols-2 gap-3 sm:gap-4 text-center">
+                                    <div>
+                                        <p class="text-sm text-gray-600">NMLS#</p>
+                                        <p class="font-semibold text-primary">2002217</p>
                                     </div>
-                                </div>
-                                <div class="contact-item">
-                                    <span class="icon">📞</span>
-                                    <div class="text">
-                                        <strong>Phone</strong>
-                                        <p><a href="tel:4019520655">(401) 952-0655</a></p>
-                                    </div>
-                                </div>
-                                <div class="contact-item">
-                                    <span class="icon">✉️</span>
-                                    <div class="text">
-                                        <strong>Email</strong>
-                                        <p><a href="mailto:Carla@FloMortgage.com">Carla@FloMortgage.com</a></p>
+                                    <div>
+                                        <p class="text-sm text-gray-600">Licensed in</p>
+                                        <p class="font-semibold text-primary">Florida</p>
                                     </div>
                                 </div>
                             </div>
+                            <div class="flex justify-center space-x-6 pt-2">
+                                <a href="#" class="text-gray-400 hover:text-primary transition-colors p-2">
+                                    <i class="fab fa-facebook-f text-lg"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-primary transition-colors p-2">
+                                    <i class="fab fa-instagram text-lg"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-primary transition-colors p-2">
+                                    <i class="fab fa-linkedin-in text-lg"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-primary transition-colors p-2">
+                                    <i class="fab fa-twitter text-lg"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="contact-form">
-                        <form action="https://formspree.io/f/carla@flomortgage.com" method="POST">
-                            <input type="text" id="name" placeholder="Your Name" required>
-                            <input type="email" id="email" placeholder="Your Email" required>
-                            <textarea id="message" placeholder="How can I help you with your mortgage needs?" required></textarea>
-                            <button type="submit">Get Started Today</button>
-                        </form>
-                    </div>
                 </div>
             </div>
-        </section>
-
-        <!-- In Contact Section -->
-        <!--
-        <div class="contact-cta">
-            <a href="https://1835856.my1003app.com/2002217/register" class="cta-button-large" target="_blank" rel="noopener noreferrer">Start Your Pre-Approval</a>
         </div>
-        -->
-    </main>
+    </section>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="legal-info">
-                    <p class="nmls-info">NMLS#: 2002217 | Company NMLS: 1835856 | Licensed Mortgage Lender | Equal Housing Opportunity</p>
-                    
-                    <p class="specialties">Specializing in: FHA Loans | VA Loans | USDA Loans | Conventional Mortgages | Investment Properties</p>
-                    
-                    <p class="disclaimer">The content provided is presented for information purposes only. This is not a commitment to lend or extend credit. All loans are subject to credit approval.</p>
-                    
-                    <p class="copyright">© 2024 FLO Mortgage. All rights reserved.</p>
+    <!-- Stats Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <p class="text-4xl font-bold text-primary mb-2">22+</p>
+                <p class="text-gray-600">Years Experience</p>
+            </div>
+            <div class="text-center">
+                <p class="text-4xl font-bold text-primary mb-2">1000+</p>
+                <p class="text-gray-600">Happy Homeowners</p>
+            </div>
+            <div class="text-center">
+                <p class="text-4xl font-bold text-primary mb-2">5.0</p>
+                <p class="text-gray-600">Customer Rating</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12">Mortgage Solutions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-home text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">First-Time Homebuyers</h3>
+                    <p class="text-gray-600">Specialized programs and guidance for first-time homebuyers.</p>
                 </div>
-
-                <div class="social-icons">
-                    <a href="#" class="social-icon" aria-label="Facebook">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="X (Twitter)">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#" class="social-icon" aria-label="TikTok">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-exchange-alt text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Refinancing</h3>
+                    <p class="text-gray-600">Lower your monthly payments or get cash from your equity.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-chart-line text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Investment Properties</h3>
+                    <p class="text-gray-600">Financing solutions for your investment property goals.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary py-20">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to Start Your Journey?</h2>
+            <p class="text-gray-300 mb-8 max-w-2xl mx-auto">Let's work together to find the perfect mortgage solution for your needs.</p>
+            <a href="#apply" class="inline-block bg-accent text-white px-8 py-3 rounded-full font-medium hover:bg-accent/90 transition-all transform hover:scale-105">
+                Get Started Today
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-white text-lg font-semibold mb-4">Contact</h3>
+                <p class="mb-2"><i class="fas fa-phone mr-2"></i>(401) 952-0655</p>
+                <p class="mb-2"><i class="fas fa-envelope mr-2"></i>Carla@FloMortgage.com</p>
+                <p><i class="fas fa-map-marker-alt mr-2"></i>Palm Coast, FL</p>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                    <li><a href="#loan-programs" class="hover:text-white transition-colors">Loan Programs</a></li>
+                    <li><a href="#resources" class="hover:text-white transition-colors">Resources</a></li>
+                    <li><a href="#blog" class="hover:text-white transition-colors">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-semibold mb-4">Connect</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-semibold mb-4">Licensing</h3>
+                <p class="text-sm">NMLS#: 2002217</p>
+                <p class="text-sm">Licensed in: FL</p>
+                <img src="equal-housing-opportunity.png" alt="Equal Housing Opportunity" class="h-12 mt-4">
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-8 pt-8 border-t border-gray-800 text-center text-sm">
+            <p>©2024 All Rights Reserved | Equal Housing Opportunity</p>
         </div>
     </footer>
 
-    <!-- Video Modal -->
-    <div class="video-modal" id="video-modal">
-        <div class="modal-overlay"></div>
-        <div class="modal-container">
-            <button class="modal-close" aria-label="Close Video">&times;</button>
-            <div class="video-wrapper">
-                <iframe 
-                    width="560" 
-                    height="315" 
-                    src="" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
+    <!-- Mobile Menu -->
+    <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-50 z-50 transition-all duration-300" id="mobile-menu">
+        <div class="bg-white h-auto w-full xs:w-80 p-6 ml-auto">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-xl font-bold text-primary">Menu</h2>
+                <button class="p-2 text-gray-600 touch-manipulation" id="close-menu">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
             </div>
+            <nav class="space-y-4">
+                <a href="#home" class="block py-2 text-gray-600 hover:text-primary transition-colors">Home</a>
+                <a href="#about" class="block py-2 text-gray-600 hover:text-primary transition-colors">About</a>
+                <a href="#loan-programs" class="block py-2 text-gray-600 hover:text-primary transition-colors">Loan Programs</a>
+                <a href="#resources" class="block py-2 text-gray-600 hover:text-primary transition-colors">Resources</a>
+                <a href="#blog" class="block py-2 text-gray-600 hover:text-primary transition-colors">Blog</a>
+                <a href="#apply" class="block bg-accent text-white px-6 py-3 rounded-full text-center mt-6">Apply Now</a>
+            </nav>
         </div>
     </div>
 
-    <!-- Add this script right before the closing </body> tag -->
     <script>
-        // Immediately check if elements exist
-        const playBtn = document.getElementById('play-video');
-        const modal = document.getElementById('video-modal');
-        
-        if (playBtn && modal) {
-            const closeBtn = modal.querySelector('.modal-close');
-            const iframe = modal.querySelector('iframe');
-            const videoUrl = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1';
+        // Mobile menu functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-            // Add click handler directly to play button
-            playBtn.addEventListener('click', function() {
-                modal.classList.add('active');
-                iframe.setAttribute('src', videoUrl);
-                document.body.style.overflow = 'hidden';
-            });
-
-            // Close button handler
-            closeBtn.addEventListener('click', function() {
-                modal.classList.remove('active');
-                iframe.setAttribute('src', '');
-                document.body.style.overflow = '';
-            });
-
-            // Click outside to close
-            modal.querySelector('.modal-overlay').addEventListener('click', function() {
-                modal.classList.remove('active');
-                iframe.setAttribute('src', '');
-                document.body.style.overflow = '';
-            });
-
-            // Escape key to close
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && modal.classList.contains('active')) {
-                    modal.classList.remove('active');
-                    iframe.setAttribute('src', '');
-                    document.body.style.overflow = '';
-                }
-            });
-        }
-
-        // Immediate debug check
-        console.log('=== HERO SECTION DEBUG ===');
-        
-        // Check if elements exist
-        const hero = document.querySelector('.hero');
-        console.log('Hero element found:', !!hero);
-        
-        const heroContainer = document.querySelector('.hero-container');
-        console.log('Hero container found:', !!heroContainer);
-        
-        const heroImage = document.querySelector('.hero-image img');
-        console.log('Hero image element:', heroImage ? {
-            src: heroImage.src,
-            exists: true,
-            loaded: heroImage.complete,
-            hasError: heroImage.naturalWidth === 0
-        } : 'Not found');
-        
-        // Check background image
-        if (hero) {
-            const bgImage = getComputedStyle(hero).backgroundImage;
-            console.log('Background image:', bgImage);
-        }
-        
-        // Check layout
-        if (heroContainer) {
-            console.log('Container layout:', {
-                width: heroContainer.offsetWidth,
-                children: heroContainer.children.length
-            });
-        }
-    </script>
-
-    <!-- Add this right before the closing </body> tag -->
-    <script>
-        // Immediate execution
-        console.clear();
-        console.log('%c=== PAGE ANALYSIS ===', 'color: #ff0000; font-size: 16px; font-weight: bold;');
-        
-        // Get all sections
-        const allSections = document.querySelectorAll('section');
-        console.log('Total sections found:', allSections.length);
-        
-        // Log each section
-        allSections.forEach((section, i) => {
-            const heading = section.querySelector('h1,h2,h3')?.textContent || 'No heading';
-            console.log(`${i + 1}. Section:`, {
-                id: section.id || 'no-id',
-                heading: heading.trim(),
-                classes: section.className
-            });
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
         });
-        
-        // Specifically find loan sections
-        const loanSections = document.querySelectorAll('[id*="loan"], [class*="loan"]');
-        console.log('Loan-related sections:', loanSections.length);
+
+        closeMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
     </script>
 </body>
 </html>
