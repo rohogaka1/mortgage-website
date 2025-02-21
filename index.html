@@ -28,6 +28,8 @@
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon/favicon.png">
 </head>
 <body class="font-[Poppins] bg-gray-50">
     <!-- Navigation -->
@@ -74,7 +76,7 @@
                         <a href="https://1835856.my1003app.com/2002217/register" class="w-full xs:w-auto bg-accent text-white px-6 py-3 rounded-full font-medium hover:bg-accent/90 transition-all transform hover:scale-105 text-center">
                             Get Pre-Approved
                         </a>
-                        <a href="#contact" class="w-full xs:w-auto border-2 border-white text-white px-6 py-3 rounded-full font-medium hover:bg-white hover:text-primary transition-all text-center">
+                        <a href="mailto:carla@flomortgage.com" class="w-full xs:w-auto border-2 border-white text-white px-6 py-3 rounded-full font-medium hover:bg-white hover:text-primary transition-all text-center">
                             Contact Me
                         </a>
                     </div>
@@ -82,6 +84,14 @@
 
                 <!-- Right Content - Portrait and Details -->
                 <div class="relative order-1 lg:order-2">
+                    <!-- Logo -->
+                    <div class="absolute -top-8 right-4 z-10">
+                        <img 
+                            src="images/FloMortgage-Logo.jpg" 
+                            alt="FloMortgage Logo" 
+                            class="w-32 h-auto rounded-lg shadow-lg bg-white p-2"
+                        >
+                    </div>
                     <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-xl max-w-md mx-auto">
                         <div class="aspect-[3/4] mb-4 sm:mb-6 overflow-hidden rounded-xl">
                             <img 
@@ -133,8 +143,111 @@
                                     <i class="fab fa-twitter text-lg"></i>
                                 </a>
                             </div>
+                            <!-- PDF Download Button -->
+                            <div class="mt-4 text-center">
+                                <a 
+                                    href="assets/documents/Comprehensive_Mortgage_Process_Guide.pdf" 
+                                    download
+                                    class="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary hover:bg-primary/20 transition-all"
+                                >
+                                    <i class="fas fa-file-pdf"></i>
+                                    Download Free Mortgage Guide
+                                    <span class="text-xs text-primary/70">(PDF)</span>
+                                </a>
+                            </div>
+                            <div class="mt-4 flex justify-center">
+                                <img 
+                                    src="images/equal-housing-logo-blue.png" 
+                                    alt="Equal Housing Opportunity"
+                                    class="h-8"
+                                >
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Carousel Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">What Our Clients Say</h2>
+                <div class="flex items-center justify-center gap-1">
+                    <span class="text-2xl text-yellow-400">⭐️⭐️⭐️⭐️⭐️</span>
+                    <p class="text-gray-600 ml-2">5.0 Rating on Google</p>
+                </div>
+            </div>
+            
+            <!-- Carousel Container -->
+            <div class="relative">
+                <!-- Reviews Slider -->
+                <div class="overflow-hidden" id="reviewsSlider">
+                    <div class="flex transition-transform duration-500 ease-in-out">
+                        <!-- Review Card 1 -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-yellow-400 text-lg">★★★★★</div>
+                                    <span class="ml-2 text-gray-500 text-sm">5 months ago</span>
+                                </div>
+                                <p class="text-gray-700 mb-4">"Excellent Service! Carla and Tristian are family now! Next home purchase will definitely include the two of them. Thank you for your patience ❤️"</p>
+                                <div class="flex items-center">
+                                    <span class="font-semibold text-primary">Victoria Picozzi</span>
+                                    <span class="text-gray-500 text-sm ml-2">Local Guide</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 2 -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-yellow-400 text-lg">★★★★★</div>
+                                    <span class="ml-2 text-gray-500 text-sm">5 months ago</span>
+                                </div>
+                                <p class="text-gray-700 mb-4">"I must commend the excellent experience we had with Carla and Tristan. We were kept informed during every step of the mortgage process. The entire process went smoothly and was not stressful at all. Best experience we have ever had with a mortgage company!! Thank you!!"</p>
+                                <div class="flex items-center">
+                                    <span class="font-semibold text-primary">Rose Sweeney</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 3 -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-yellow-400 text-lg">★★★★★</div>
+                                    <span class="ml-2 text-gray-500 text-sm">7 months ago</span>
+                                </div>
+                                <p class="text-gray-700 mb-4">"As a realtor, ensuring my clients have a seamless and successful home buying experience is paramount. That's why I confidently refer my clients to Carla Gubitosi. Working with Carla has consistently resulted in smooth and very successful closings."</p>
+                                <div class="flex items-center">
+                                    <span class="font-semibold text-primary">Cynthia Beaudry</span>
+                                    <span class="text-gray-500 text-sm ml-2">Realtor</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button class="absolute left-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md -ml-4 hidden md:block" id="prevButton">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <button class="absolute right-0 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md -mr-4 hidden md:block" id="nextButton">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+
+                <!-- Dots Navigation -->
+                <div class="flex justify-center mt-8 gap-2">
+                    <button class="w-2 h-2 rounded-full bg-primary" data-slide="0"></button>
+                    <button class="w-2 h-2 rounded-full bg-gray-300" data-slide="1"></button>
+                    <button class="w-2 h-2 rounded-full bg-gray-300" data-slide="2"></button>
                 </div>
             </div>
         </div>
@@ -152,7 +265,10 @@
                 <p class="text-gray-600">Happy Homeowners</p>
             </div>
             <div class="text-center">
-                <p class="text-4xl font-bold text-primary mb-2">5.0</p>
+                <div class="flex items-center justify-center gap-1">
+                    <p class="text-4xl font-bold text-primary">5.0</p>
+                    <span class="text-2xl text-yellow-400 ml-2">⭐️⭐️⭐️⭐️⭐️</span>
+                </div>
                 <p class="text-gray-600">Customer Rating</p>
             </div>
         </div>
@@ -383,6 +499,106 @@
                 successMessage.classList.remove('hidden');
             }, 500);
         });
+
+        // Carousel functionality
+        function initCarousel() {
+            const slider = document.getElementById('reviewsSlider').firstElementChild;
+            const slides = slider.children;
+            const prevButton = document.getElementById('prevButton');
+            const nextButton = document.getElementById('nextButton');
+            const dots = document.querySelectorAll('[data-slide]');
+            let currentSlide = 0;
+            let autoplayInterval;
+            
+            // Calculate slides to show based on screen width
+            function getSlidesToShow() {
+                if (window.innerWidth < 768) return 1;
+                if (window.innerWidth < 1024) return 2;
+                return 3;
+            }
+            
+            let slidesToShow = getSlidesToShow();
+            const totalSlides = slides.length;
+
+            function updateSlider() {
+                const offset = -(currentSlide * (100 / slidesToShow));
+                slider.style.transform = `translateX(${offset}%)`;
+                
+                // Update slide widths
+                Array.from(slides).forEach(slide => {
+                    slide.style.width = `${100 / slidesToShow}%`;
+                });
+
+                // Update dots
+                dots.forEach((dot, index) => {
+                    dot.classList.toggle('bg-primary', index === currentSlide);
+                    dot.classList.toggle('bg-gray-300', index !== currentSlide);
+                });
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % (totalSlides - slidesToShow + 1);
+                updateSlider();
+            }
+
+            function prevSlide() {
+                currentSlide = currentSlide === 0 ? totalSlides - slidesToShow : currentSlide - 1;
+                updateSlider();
+            }
+
+            function startAutoplay() {
+                stopAutoplay();
+                autoplayInterval = setInterval(nextSlide, 5000);
+            }
+
+            function stopAutoplay() {
+                if (autoplayInterval) {
+                    clearInterval(autoplayInterval);
+                }
+            }
+
+            prevButton.addEventListener('click', () => {
+                prevSlide();
+                stopAutoplay();
+                startAutoplay();
+            });
+
+            nextButton.addEventListener('click', () => {
+                nextSlide();
+                stopAutoplay();
+                startAutoplay();
+            });
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentSlide = index;
+                    updateSlider();
+                    stopAutoplay();
+                    startAutoplay();
+                });
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                const newSlidesToShow = getSlidesToShow();
+                if (newSlidesToShow !== slidesToShow) {
+                    slidesToShow = newSlidesToShow;
+                    currentSlide = 0;
+                    updateSlider();
+                }
+            });
+
+            // Initialize slider
+            slider.style.display = 'flex';
+            Array.from(slides).forEach(slide => {
+                slide.style.flex = `0 0 ${100 / slidesToShow}%`;
+            });
+            updateSlider();
+            startAutoplay();
+        }
+
+        // Initialize carousel when DOM is loaded
+        document.addEventListener('DOMContentLoaded', initCarousel);
     </script>
 </body>
 </html>

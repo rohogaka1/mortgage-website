@@ -25,12 +25,16 @@
 <body class="font-[Poppins] bg-gray-50">
     <!-- Navigation -->
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="index.html" class="text-xl xs:text-2xl font-bold text-primary">Mortgages By Carla</a>
-                </div>
-                
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <div class="flex flex-col">
+                        <img src="images/FloMortgage-Logo.jpg" alt="FloMortgage" class="h-12">
+                        <p class="text-xs text-gray-500 mt-1">NMLS: 1835856</p>
+                    </div>
+                </a>
+
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-4 lg:space-x-8">
                     <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Home</a>
@@ -108,6 +112,27 @@
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-primary text-center mb-12">Free Guides & Resources</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Mortgage Process Checklist -->
+                <div class="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow">
+                    <div class="text-accent mb-4">
+                        <div class="flex flex-col items-center">
+                            <i class="fas fa-tasks text-3xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Mortgage Process Checklist</h3>
+                    <p class="text-gray-600 mb-4">A detailed checklist of documents and steps needed for your mortgage application.</p>
+                    <a 
+                        href="../assets/documents/Mortgage_Process_Checklist.pdf" 
+                        download 
+                        class="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-full hover:bg-accent/90 transition-all"
+                    >
+                        <i class="fas fa-file-pdf"></i>
+                        Download Free Checklist
+                        <span class="text-sm opacity-90">(PDF)</span>
+                    </a>
+                    <p class="text-sm text-gray-500 mt-3">Free download - No email required</p>
+                </div>
+
                 <!-- First-Time Homebuyer Guide -->
                 <div class="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow">
                     <div class="text-accent mb-4">
@@ -115,17 +140,16 @@
                     </div>
                     <h3 class="text-xl font-semibold text-primary mb-3">First-Time Homebuyer Guide</h3>
                     <p class="text-gray-600 mb-4">A comprehensive guide to help you navigate the home buying process step by step.</p>
-                    <a href="#download" class="inline-block text-accent hover:text-primary transition-colors">Download PDF →</a>
-                </div>
-
-                <!-- Mortgage Process Checklist -->
-                <div class="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow">
-                    <div class="text-accent mb-4">
-                        <i class="fas fa-tasks text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-primary mb-3">Mortgage Process Checklist</h3>
-                    <p class="text-gray-600 mb-4">A detailed checklist of documents and steps needed for your mortgage application.</p>
-                    <a href="#download" class="inline-block text-accent hover:text-primary transition-colors">Download PDF →</a>
+                    <a 
+                        href="../assets/documents/Comprehensive_Mortgage_Process_Guide.pdf" 
+                        download 
+                        class="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-full hover:bg-accent/90 transition-all"
+                    >
+                        <i class="fas fa-file-pdf"></i>
+                        Download Free Guide
+                        <span class="text-sm opacity-90">(PDF)</span>
+                    </a>
+                    <p class="text-sm text-gray-500 mt-3">Free download - No email required</p>
                 </div>
 
                 <!-- Home Inspection Guide -->
@@ -135,7 +159,16 @@
                     </div>
                     <h3 class="text-xl font-semibold text-primary mb-3">Home Inspection Guide</h3>
                     <p class="text-gray-600 mb-4">What to expect and look for during your home inspection process.</p>
-                    <a href="#download" class="inline-block text-accent hover:text-primary transition-colors">Download PDF →</a>
+                    <a 
+                        href="../assets/documents/Home_Inspection_Guide.pdf" 
+                        download 
+                        class="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-full hover:bg-accent/90 transition-all"
+                    >
+                        <i class="fas fa-file-pdf"></i>
+                        Download Free Guide
+                        <span class="text-sm opacity-90">(PDF)</span>
+                    </a>
+                    <p class="text-sm text-gray-500 mt-3">Free download - No email required</p>
                 </div>
             </div>
         </div>
@@ -236,17 +269,42 @@
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 py-12">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-                <h3 class="text-white text-lg font-semibold mb-4">Contact</h3>
-                <p class="mb-2"><i class="fas fa-phone mr-2"></i>(401) 952-0655</p>
-                <p class="mb-2"><i class="fas fa-envelope mr-2"></i>Carla@FloMortgage.com</p>
-                <p><i class="fas fa-map-marker-alt mr-2"></i>Palm Coast, FL</p>
-                <img 
-                    src="/images/equal-housing-opportunity.png" 
-                    alt="Equal Housing Opportunity"
-                    class="h-12 mt-4"
-                >
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Contact</h3>
+                    <p class="mb-2"><i class="fas fa-phone mr-2"></i>(401) 952-0655</p>
+                    <p class="mb-2"><i class="fas fa-envelope mr-2"></i>Carla@FloMortgage.com</p>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i>Palm Coast, FL</p>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="loan-programs.html" class="hover:text-white transition-colors">Loan Programs</a></li>
+                        <li><a href="resources.html" class="hover:text-white transition-colors">Resources</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Licensing</h3>
+                    <p class="mb-2">Company NMLS#: 1835856</p>
+                    <p class="mb-2">NMLS#: 2002217</p>
+                    <p class="mb-2">Licensed in: FL</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-sm text-gray-400">©2024 All Rights Reserved | Equal Housing Opportunity</p>
             </div>
         </div>
     </footer>
