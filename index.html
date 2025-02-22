@@ -86,11 +86,14 @@
                 <div class="relative order-1 lg:order-2">
                     <!-- Logo -->
                     <div class="absolute -top-8 right-4 z-10">
-                        <img 
-                            src="images/FloMortgage-Logo.jpg" 
-                            alt="FloMortgage Logo" 
-                            class="w-32 h-auto rounded-lg shadow-lg bg-white p-2"
-                        >
+                        <div class="flex flex-col items-center">
+                            <img 
+                                src="images/FloMortgage-Logo.jpg" 
+                                alt="FloMortgage Logo" 
+                                class="w-32 h-auto rounded-lg shadow-lg bg-white p-2"
+                            >
+                            <p class="text-xs text-gray-600 mt-1 bg-white px-2 py-1 rounded shadow-sm">Company NMLS: 1835856</p>
+                        </div>
                     </div>
                     <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-xl max-w-md mx-auto">
                         <div class="aspect-[3/4] mb-4 sm:mb-6 overflow-hidden rounded-xl">
@@ -228,6 +231,66 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Review Card 4 -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-yellow-400 text-lg">★★★★★</div>
+                                    <span class="ml-2 text-gray-500 text-sm">7 months ago</span>
+                                </div>
+                                <p class="text-gray-700 mb-4">"Carla is the best. She always responds to my Buyers in a timely manner."</p>
+                                <div class="flex items-center">
+                                    <span class="font-semibold text-primary">Janet Salam</span>
+                                    <span class="text-gray-500 text-sm ml-2">5 reviews</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 5 -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-yellow-400 text-lg">★★★★★</div>
+                                    <span class="ml-2 text-gray-500 text-sm">a year ago</span>
+                                </div>
+                                <p class="text-gray-700 mb-4">"Carla is absolutely amazing! Just bought my first home and she made this process very smooth for me. I appreciate everything that was done to keep things rolling while taking the time to make sure my questions were answered and concerns addressed."</p>
+                                <div class="flex items-center">
+                                    <span class="font-semibold text-primary">Piper Ciaramella</span>
+                                    <span class="text-gray-500 text-sm ml-2">22 reviews</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 6 -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-yellow-400 text-lg">★★★★★</div>
+                                    <span class="ml-2 text-gray-500 text-sm">a year ago</span>
+                                </div>
+                                <p class="text-gray-700 mb-4">"My client was having such a hard time to get a home that he could finally call his own! Thanks to Carla & Rob at FloMortgage, they got it through the finish line! I know that nobody else could have gotten it there! Thank you both so much for all the extra time you had to put in to get this to close! Now our client is happy to finally have a place called Home because of you both!"</p>
+                                <div class="flex items-center">
+                                    <span class="font-semibold text-primary">Malisa Cammarn</span>
+                                    <span class="text-gray-500 text-sm ml-2">7 reviews</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review Card 7 -->
+                        <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-yellow-400 text-lg">★★★★★</div>
+                                    <span class="ml-2 text-gray-500 text-sm">a year ago</span>
+                                </div>
+                                <p class="text-gray-700 mb-4">"Flo Mortgage was absolutely wonderful and attentive, as a first time home buyer, they made the process feel way less intimidating than I anticipated. Would recommend them to anyone, ESPECIALLY Tristan, and Carla!"</p>
+                                <div class="flex items-center">
+                                    <span class="font-semibold text-primary">Juhlya Schrom</span>
+                                    <span class="text-gray-500 text-sm ml-2">4 reviews</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -248,6 +311,10 @@
                     <button class="w-2 h-2 rounded-full bg-primary" data-slide="0"></button>
                     <button class="w-2 h-2 rounded-full bg-gray-300" data-slide="1"></button>
                     <button class="w-2 h-2 rounded-full bg-gray-300" data-slide="2"></button>
+                    <button class="w-2 h-2 rounded-full bg-gray-300" data-slide="3"></button>
+                    <button class="w-2 h-2 rounded-full bg-gray-300" data-slide="4"></button>
+                    <button class="w-2 h-2 rounded-full bg-gray-300" data-slide="5"></button>
+                    <button class="w-2 h-2 rounded-full bg-gray-300" data-slide="6"></button>
                 </div>
             </div>
         </div>
@@ -523,12 +590,8 @@
             function updateSlider() {
                 const offset = -(currentSlide * (100 / slidesToShow));
                 slider.style.transform = `translateX(${offset}%)`;
+                slider.style.transition = 'transform 0.5s ease-in-out';
                 
-                // Update slide widths
-                Array.from(slides).forEach(slide => {
-                    slide.style.width = `${100 / slidesToShow}%`;
-                });
-
                 // Update dots
                 dots.forEach((dot, index) => {
                     dot.classList.toggle('bg-primary', index === currentSlide);
@@ -537,18 +600,40 @@
             }
 
             function nextSlide() {
-                currentSlide = (currentSlide + 1) % (totalSlides - slidesToShow + 1);
+                if (currentSlide >= totalSlides - slidesToShow) {
+                    // When reaching the end, quickly reset to first slide without animation
+                    slider.style.transition = 'none';
+                    currentSlide = 0;
+                    slider.style.transform = `translateX(0%)`;
+                    // Force reflow
+                    slider.offsetHeight;
+                    // Restore transition
+                    slider.style.transition = 'transform 0.5s ease-in-out';
+                } else {
+                    currentSlide++;
+                }
                 updateSlider();
             }
 
             function prevSlide() {
-                currentSlide = currentSlide === 0 ? totalSlides - slidesToShow : currentSlide - 1;
+                if (currentSlide <= 0) {
+                    // When at start, quickly jump to last slide without animation
+                    slider.style.transition = 'none';
+                    currentSlide = totalSlides - slidesToShow;
+                    slider.style.transform = `translateX(-${currentSlide * (100 / slidesToShow)}%)`;
+                    // Force reflow
+                    slider.offsetHeight;
+                    // Restore transition
+                    slider.style.transition = 'transform 0.5s ease-in-out';
+                } else {
+                    currentSlide--;
+                }
                 updateSlider();
             }
 
             function startAutoplay() {
                 stopAutoplay();
-                autoplayInterval = setInterval(nextSlide, 5000);
+                autoplayInterval = setInterval(nextSlide, 3000);
             }
 
             function stopAutoplay() {
@@ -556,6 +641,10 @@
                     clearInterval(autoplayInterval);
                 }
             }
+
+            // Pause autoplay on hover
+            slider.parentElement.addEventListener('mouseenter', stopAutoplay);
+            slider.parentElement.addEventListener('mouseleave', startAutoplay);
 
             prevButton.addEventListener('click', () => {
                 prevSlide();
@@ -590,6 +679,7 @@
 
             // Initialize slider
             slider.style.display = 'flex';
+            slider.style.transition = 'transform 0.5s ease-in-out';
             Array.from(slides).forEach(slide => {
                 slide.style.flex = `0 0 ${100 / slidesToShow}%`;
             });
